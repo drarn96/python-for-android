@@ -24,14 +24,14 @@ class Hostpython3Recipe(Recipe):
         :class:`~pythonforandroid.python.HostPythonRecipe`
     '''
 
-    version = '3.9.0'
+    version = '3.6.9'
     name = 'hostpython3'
 
     build_subdir = 'native-build'
     '''Specify the sub build directory for the hostpython3 recipe. Defaults
     to ``native-build``.'''
 
-    url = 'https://www.python.org/ftp/python/{version}/Python-{version}a1.tgz'
+    url = 'https://www.python.org/ftp/python/{version}/Python-{version}.tgz'
     '''The default url to download our host python recipe. This url will
     change depending on the python version set in attribute :attr:`version`.'''
 
