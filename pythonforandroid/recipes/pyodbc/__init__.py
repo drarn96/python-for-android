@@ -7,9 +7,9 @@ class PyodbcRecipe(PythonRecipe):
     site_packages_name = 'pyodbc'
     depends = ['setuptools']
     
-    call_hostpython_via_targetpython = True
-    install_in_hostpython = True
-    install_in_targetpython = True
+    call_hostpython_via_targetpython = False
+    install_in_hostpython = False
+    install_in_targetpython = False
         
     def build_arch(self, arch):
         super().build_arch(arch)
