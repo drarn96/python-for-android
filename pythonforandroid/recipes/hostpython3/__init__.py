@@ -31,7 +31,7 @@ class Hostpython3Recipe(Recipe):
     '''Specify the sub build directory for the hostpython3 recipe. Defaults
     to ``native-build``.'''
 
-    url = 'https://www.python.org/ftp/python/{version}/Python-{version}.tgz'
+    url = 'https://www.python.org/ftp/python/{version}/Python-{version}a1.tgz'
     '''The default url to download our host python recipe. This url will
     change depending on the python version set in attribute :attr:`version`.'''
 
