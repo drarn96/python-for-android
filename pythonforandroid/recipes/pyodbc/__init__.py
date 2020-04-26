@@ -13,10 +13,6 @@ class PyodbcRecipe(CompiledComponentsPythonRecipe):
     call_hostpython_via_targetpython = False
     install_in_hostpython = False
     install_in_targetpython = False
-    
-    def __init__(self, *args, **kwargs):
-        super().__init__(**kwargs)
-        self.build_arch('https://github.com/lurcher/unixODBC/archive/2.3.7.tar.gz')
 
 recipe = PyodbcRecipe()
 
