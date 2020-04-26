@@ -7,9 +7,17 @@ class PyodbcRecipe(PythonRecipe):
     site_packages_name = 'pyodbc'
     depends = ['setuptools']
     
-    call_hostpython_via_targetpython = False
-    install_in_hostpython = False
+    call_hostpython_via_targetpython = True
+    install_in_hostpython = True
+    install_in_targetpython = True
+    
+    
+    def prebuild_arch(self, arch):
+        super(PyodbcRecipe, self).prebuild_arch(arch)
+        self.install_python_package('https://github.com/lurcher/unixODBC/archive/2.3.7.tar.gz')
 
 
 recipe = PyodbcRecipe()
+
+
 
