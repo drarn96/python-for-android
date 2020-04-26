@@ -5,7 +5,10 @@ class PyodbcRecipe(CompiledComponentsPythonRecipe):
     version = '4.0.30'
     url = 'https://github.com/mkleehammer/pyodbc/archive/{version}.tar.gz'
     site_packages_name = 'pyodbc'
-    depends = ['python3','python-dev-tools','bcrypt','setuptools']
+    depends = ['setuptools']
+    
+    call_hostpython_via_targetpython = True
+    install_in_hostpython = True
     #conflicts = []
 
 
