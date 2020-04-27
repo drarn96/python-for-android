@@ -10,7 +10,7 @@ class OdbcRecipe(CompiledComponentsPythonRecipe):
     site_packages_name = 'odbc'
     depends = ['setuptools']
     
-    call_hostpython_via_targetpython = False
+    call_hostpython_via_targetpython = True
     install_in_hostpython = False
     install_in_targetpython = False
 
